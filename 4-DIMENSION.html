@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodApp</title>
+    <style>
+        body {
+            font-family:Comic Sans, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: purple;
+            background-image: url("food.jpg");
+            font-color:white;
+            font-size:30px;
+
+        }
+
+        header {
+            background-color: #FF6347;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        p{
+          font-color:white;
+          font-size:20px;
+         }
+.white-text{
+color:white;
+}
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: green;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            display: none;
+            margin-bottom: 30px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: red;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin: 0 0 5px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 30px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background: #FF6347;
+            color: #fff;
+            border: none;
+            padding: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+
+        button:hover {
+            background: #FF4500;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>4-DIMENSION</h1>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('home')">Home</a></li>
+                <li><a onclick="showSection('about')">About Us</a></li>
+                <li><a onclick="showSection('menu')">Menu</a></li>
+                <li><a onclick="showSection('chooseMenu')">choose Menu</a></li>
+                <li><a onclick="showSection('totalPrice')">Total Price</a></li>
+                <li><a onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="active">
+            <h2>Welcome to 4-DIMENSION</h2>
+            <p class ="white-text">Discover delicious recipes and order your favorite meals.
+FoodApp is your go-to destination for discovering delicious recipes and ordering your favorite meals with ease. Whether you're looking to explore new culinary delights or craving a quick meal delivery, FoodApp has got you covered. We offer a wide range of personalized nutrition plans, fitness programs, mental health support, and health tracking tools to help you maintain a healthy lifestyle. With FoodApp, you can enjoy high-quality, fresh meals delivered right to your doorstep, all while accessing expert advice and tailored plans to suit your dietary needs.
+At FoodApp, we believe that every meal should be an experience to savor. Whether you're craving the rich, aromatic flavors of Indian cuisine or the comforting classics of American dishes, FoodApp has a menu to tantalize every taste bud. Dive into a world where your culinary dreams come true with personalized nutrition plans, expert health advice, and a seamless meal delivery service that brings gourmet goodness straight to your doorstep. With FoodApp, every bite is a step towards a healthier, happier you. Embrace the joy of dining with FoodApp—where your meal is our mission. 🍽️✨</p>
+
+            <img src="C:\Users\logad\OneDrive\Desktop">
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p class="white-text">FoodApp is your go-to app for delicious recipes and quick meal deliveries. We are committed to providing fresh, high-quality meals to our customers.
+FoodApp is revolutionizing the way you experience food. Our platform is designed to bring culinary delight to your fingertips, offering a seamless blend of delicious recipes and convenient meal delivery services. With FoodApp, you can explore a diverse menu of high-quality, fresh meals crafted to satisfy your taste buds. Whether you're a foodie eager to try new dishes or someone seeking quick and healthy meal options, FoodApp caters to all your needs. Our commitment to excellence ensures that every meal is prepared with the finest ingredients, bringing you both flavor and nutrition in every bite. Discover the joy of eating well with FoodApp—your ultimate companion for a flavorful, healthier lifestyle.
+FoodApp offers a delightful fusion of culinary traditions, featuring an extensive menu of both Indian and American recipes tailored to suit your palate and budget. Whether you're craving a hearty American-style burger or a flavorful Indian curry, FoodApp has it all. With prices adjusted to match the Indian market, you can enjoy these diverse dishes without breaking the bank. From classic American breakfasts to traditional Indian thalis, FoodApp brings the best of both worlds to your table, ensuring a delightful and affordable dining experience.
+
+</p>
+        </section>
+        <section id="menu">
+            <h2 class="white-text">BITE BOARD</h2>
+            <ul>
+                <h2 class="white-text">Indian Menu</h2>
+                     <li>Paneer Butter Masala - ₹250</li>
+                     <li>Chicken Biryani - ₹300</li>                    
+                     <li>Masala Dosa - ₹100</li>
+                     <li>Palak Paneer - ₹220</li>
+                     <li>Rajma Chawal - ₹150</li>
+                     <li>Chole Bhature - ₹180</li>
+                     <li>Aloo Paratha - ₹80</li>
+
+               <h2 class="white-text">American Menu</h2>
+                    <li>Classic Cheeseburger - ₹350</li>
+                    <li>Grilled Chicken Caesar Salad - ₹300</li>
+                    <li>BBQ Ribs - ₹400</li>
+                    <li>Mac and Cheese - ₹200</li>
+                    <li>Buffalo Wings - ₹250</li>
+                    <li>Pancakes with Maple Syrup - ₹180</li>
+                    <li>Apple Pie - ₹150</li>
+                    
+
+                <h2 class="white-text">Indian Desserts</h2>
+                        <li>Gulab Jamun - ₹120</li>
+                        <li>Rasgulla - ₹110</li>
+                        <li>Jalebi - ₹100</li>
+                        <li>Kheer - ₹130</li>
+                        <li>Gajar Ka Halwa - ₹140</li>
+                        <li>Peda - ₹90</li>
+                        <li>Kulfi - ₹150</li>
+                <h2 class="white-text">Western Desserts</h2>
+                        <li>Chocolate Brownie - ₹180</li>
+                        <li>Cheesecake - ₹250</li>
+                        <li>Apple Pie - ₹200</li>
+                        <li>Tiramisu - ₹270</li>
+                        <li>Chocolate Mousse - ₹220</li>
+                        <li>Banoffee Pie - ₹230</li>
+                        <li>Lemon Tart - ₹210</li>
+
+
+        </ul>
+        </section>
+        <section id="chooseMenu">
+            <h2>Choose Your Menu</h2>
+            <form id="chooseMenuForm">
+                <h3>Indian Menu</h3>
+                <label><input type="checkbox" name="menu" value="Paneer Butter Masala"> Paneer Butter Masala - ₹250</label><br>
+                <label><input type="checkbox" name="menu" value="Chicken Biryani"> Chicken Biryani - ₹300</label><br>
+                <label><input type="checkbox" name="menu" value="Masala Dosa"> Masala Dosa - ₹100</label><br>
+                <label><input type="checkbox" name="menu" value="Palak Paneer"> Palak Paneer - ₹220</label><br>
+                <label><input type="checkbox" name="menu" value="Rajma Chawal"> Rajma Chawal - ₹150</label><br>
+                <label><input type="checkbox" name="menu" value="Chole Bhature"> Chole Bhature - ₹180</label><br>
+                <label><input type="checkbox" name="menu" value="Aloo Paratha"> Aloo Paratha - ₹80</label><br>
+
+                <h3>American Menu</h3>
+                <label><input type="checkbox" name="menu" value="Classic Cheeseburger"> Classic Cheeseburger - ₹350</label><br>
+                <label><input type="checkbox" name="menu" value="Grilled Chicken Caesar Salad"> Grilled Chicken Caesar Salad - ₹300</label><br>
+                <label><input type="checkbox" name="menu" value="BBQ Ribs"> BBQ Ribs - ₹400</label><br>
+                <label><input type="checkbox" name="menu" value="Mac and Cheese"> Mac and Cheese - ₹200</label><br>
+                <label><input type="checkbox" name="menu" value="Buffalo Wings"> Buffalo Wings - ₹250</label><br>
+                <h3>Indian Desserts</h3>
+                <label><input type="checkbox" name="menu" value="Gulab Jamun"> Gulab Jamun - ₹120</label><br>
+                <label><input type="checkbox" name="menu" value="Rasgulla"> Rasgulla - ₹110</label><br>
+                <label><input type="checkbox" name="menu" value="Jalebi"> Jalebi - ₹100</label><br>
+                <label><input type="checkbox" name="menu" value="Kheer"> Kheer - ₹130</label><br>
+                <label><input type="checkbox" name="menu" value="Gajar Ka Halwa"> Gajar Ka Halwa - ₹140</label><br>
+                <label><input type="checkbox" name="menu" value="Peda"> Peda - ₹90</label><br>
+                <label><input type="checkbox" name="menu" value="Kulfi"> Kulfi - ₹150</label><br>
+
+                <h3>Western Desserts</h3>
+                <label><input type="checkbox" name="menu" value="Chocolate Brownie"> Chocolate Brownie - ₹180</label><br>
+                <label><input type="checkbox" name="menu" value="Cheesecake"> Cheesecake - ₹250</label><br>
+                <label><input type="checkbox" name="menu" value="Apple Pie"> Apple Pie - ₹200</label><br>
+                <label><input type="checkbox" name="menu" value="Tiramisu"> Tiramisu - ₹270</label><br>
+                <label><input type="checkbox" name="menu" value="Chocolate Mousse"> Chocolate Mousse - ₹220</label><br>
+</section>
+           <section id="Toatl price">
+               <h1>total price</h1>
+               <form id="total price">
+                   <button type="submit">Calculate Total Price</button> </form> </section> <section         id="totalPrice"> <h1>Total Price</h1> <p id="priceDisplay">Please select items from the menu and calculate the total price.</p>
+      </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        </main>
+    <footer>
+        <p>&copy; 2024 FoodApp. All rights reserved.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
